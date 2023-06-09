@@ -2,7 +2,7 @@
 //  ConnectionProtocol.swift
 //  SignalR-Swift
 //
-//  
+//
 //  Copyright © 2017 Jordan Camara. All rights reserved.
 //
 
@@ -24,25 +24,25 @@ public protocol ConnectionProtocol: class {
     var state: ConnectionState { get }
     var transport: ClientTransportProtocol? { get }
     var headers: HTTPHeaders { get set }
-    var sessionManager: SessionManager { get }
+    var session: URLSession { get }
     var webSocketAllowsSelfSignedSSL: Bool { get set }
-
+    
     func onSending() -> String?
-
+    
     func changeState(oldState: ConnectionState, toState newState: ConnectionState) -> Bool
     func stop()
     func disconnect()
-
+    
     func send(object: Any, completionHandler: ((Any?, Error?) -> ())?)
-
+    
     func didReceiveData(data: Any)
     func didReceiveError(error: Error)
     func willReconnect()
     func didReconnect()
     func connectionDidSlow()
-
+    
     func updateLastKeepAlive()
-
+    
     func getRequest(url: URLConvertible, httpMethod: HTTPMethod, encoding: ParameterEncoding, parameters: Parameters?) -> DataRequest
     func getRequest(url: URLConvertible, httpMethod: HTTPMethod, encoding: ParameterEncoding, parameters: Parameters?, timeout: Double) -> DataRequest
     func getRequest(url: URLConvertible, httpMethod: HTTPMethod, encoding: ParameterEncoding, parameters: Parameters?, timeout: Double, headers: HTTPHeaders) -> DataRequest

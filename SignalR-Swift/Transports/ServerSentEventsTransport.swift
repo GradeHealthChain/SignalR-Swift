@@ -62,7 +62,7 @@ public class ServerSentEventsTransport: HttpTransport {
     }
     
     override public func lostConnection(connection: ConnectionProtocol) {
-
+        
     }
     
     // MARK: - SSE Transport
@@ -79,38 +79,38 @@ public class ServerSentEventsTransport: HttpTransport {
         
         let url = isReconnecting ? connection.url.appending("reconnect") : connection.url.appending("connect")
         
-        connection.getRequest(url: url,
-                              httpMethod: .get,
-                              encoding: URLEncoding.default,
-                              parameters: parameters,
-                              timeout: 240,
-                              headers: ["Connection": "Keep-Alive"])
-        .stream { [weak self] data in
-            self?.sseQueue.async { [weak connection] in
-                guard let strongSelf = self, let strongConnection = connection else { return }
-                
-                strongSelf.buffer.append(data: data)
-                
-                while let line = strongSelf.buffer.readLine() {
-                    guard let message = ServerSentEvent.tryParse(line: line) else { continue }
-                    DispatchQueue.main.async { strongSelf.process(message: message, connection: strongConnection) }
-                }
-            }
-        }.validate().response() { [weak self, weak connection] dataResponse in
-            guard let strongSelf = self, let strongConnection = connection else { return }
-            
-            strongSelf.cancelTimeoutOperation()
-            
-            if let error = dataResponse.error as NSError?, error.code != NSURLErrorCancelled {
-                strongConnection.didReceiveError(error: error)
-            }
-            
-            if strongSelf.stop {
-                strongSelf.completeAbort()
-            } else if !strongSelf.tryCompleteAbort() && !isReconnecting {
-                strongSelf.reconnect(connection: strongConnection, data: connectionData)
-            }
-        }
+        //        connection.getRequest(url: url,
+        //                              httpMethod: .get,
+        //                              encoding: URLEncoding.default,
+        //                              parameters: parameters,
+        //                              timeout: 240,
+        //                              headers: ["Connection": "Keep-Alive"])
+        //        .stream { [weak self] data in
+        //            self?.sseQueue.async { [weak connection] in
+        //                guard let strongSelf = self, let strongConnection = connection else { return }
+        //
+        //                strongSelf.buffer.append(data: data)
+        //
+        //                while let line = strongSelf.buffer.readLine() {
+        //                    guard let message = ServerSentEvent.tryParse(line: line) else { continue }
+        //                    DispatchQueue.main.async { strongSelf.process(message: message, connection: strongConnection) }
+        //                }
+        //            }
+        //        }.validate().response() { [weak self, weak connection] dataResponse in
+        //            guard let strongSelf = self, let strongConnection = connection else { return }
+        //
+        //            strongSelf.cancelTimeoutOperation()
+        //
+        //            if let error = dataResponse.error as NSError?, error.code != NSURLErrorCancelled {
+        //                strongConnection.didReceiveError(error: error)
+        //            }
+        //
+        //            if strongSelf.stop {
+        //                strongSelf.completeAbort()
+        //            } else if !strongSelf.tryCompleteAbort() && !isReconnecting {
+        //                strongSelf.reconnect(connection: strongConnection, data: connectionData)
+        //            }
+        //        }
     }
     
     private func process(message: ServerSentEvent, connection: ConnectionProtocol) {
@@ -140,7 +140,7 @@ public class ServerSentEventsTransport: HttpTransport {
     
     private func cancelTimeoutOperation() {
         guard let completionHandler = self.completionHandler,
-            let timeoutOperation = connectTimeoutOperation else { return }
+              let timeoutOperation = connectTimeoutOperation else { return }
         
         NSObject.cancelPreviousPerformRequests(withTarget: timeoutOperation, selector: #selector(BlockOperation.start), object: nil)
         connectTimeoutOperation = nil
