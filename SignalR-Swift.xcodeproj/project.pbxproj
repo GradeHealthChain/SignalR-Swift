@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D89CA2D29AD16BE22FB404 /* Pods_SignalRSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DD50F71B5A709F5EC093E9 /* Pods_SignalRSwift.framework */; };
 		563B87161F1FA11100D75CEF /* ServerSentEventsTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B87151F1FA11100D75CEF /* ServerSentEventsTransport.swift */; };
 		568A77191F223CB2004F5D1C /* ChunkBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A77181F223CB2004F5D1C /* ChunkBuffer.swift */; };
 		568A771B1F223CF0004F5D1C /* ServerSentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A771A1F223CF0004F5D1C /* ServerSentEvent.swift */; };
-		AA049197DB8438E88C7B3D5D /* Pods_SignalR_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291C54976E982A542BA4B4C3 /* Pods_SignalR_SwiftTests.framework */; };
 		C91154631E24113F007C0DD9 /* WebSocketTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91154621E24113F007C0DD9 /* WebSocketTransport.swift */; };
 		C91154661E241239007C0DD9 /* WebSocketConnectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91154651E241239007C0DD9 /* WebSocketConnectionInfo.swift */; };
 		C91154681E243082007C0DD9 /* ReceivedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91154671E243082007C0DD9 /* ReceivedMessage.swift */; };
@@ -24,10 +22,7 @@
 		C91154771E256741007C0DD9 /* HubProxyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91154761E256741007C0DD9 /* HubProxyProtocol.swift */; };
 		C911547B1E256F98007C0DD9 /* HubInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911547A1E256F98007C0DD9 /* HubInvocation.swift */; };
 		C92AD2591E2EBCB9009686E2 /* Dictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AD2581E2EBCB9009686E2 /* Dictionary+Json.swift */; };
-		C9330B321E1FE59A00B1F2D5 /* SignalRSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9330B281E1FE59A00B1F2D5 /* SignalRSwift.framework */; };
 		C9330B391E1FE59A00B1F2D5 /* SignalR-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = C9330B2B1E1FE59A00B1F2D5 /* SignalR-Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C944563A1E76C02F000FF744 /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94456391E76C02F000FF744 /* ConnectionTests.swift */; };
-		C944563C1E76C555000FF744 /* MockClientTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944563B1E76C555000FF744 /* MockClientTransport.swift */; };
 		C9B9229D1E295AD7007C2266 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9229C1E295AD7007C2266 /* String+Dictionary.swift */; };
 		C9E1C9F81E1FEEF800335B1E /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C9F71E1FEEF800335B1E /* Connection.swift */; };
 		C9E1C9FB1E1FF03400335B1E /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C9FA1E1FF03400335B1E /* ConnectionState.swift */; };
@@ -40,29 +35,13 @@
 		C9FC2D951E2025B80027FE59 /* AutoTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FC2D941E2025B80027FE59 /* AutoTransport.swift */; };
 		C9FC2D971E2025DB0027FE59 /* HttpTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FC2D961E2025DB0027FE59 /* HttpTransport.swift */; };
 		C9FC2D991E23BC600027FE59 /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FC2D981E23BC600027FE59 /* ConnectionDelegate.swift */; };
-		FF7BD5762A33378A007B12FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF7BD5752A33378A007B12FD /* Alamofire */; };
 		FF7BD5792A3337AF007B12FD /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = FF7BD5782A3337AF007B12FD /* Starscream */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C9330B331E1FE59A00B1F2D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9330B1F1E1FE59A00B1F2D5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9330B271E1FE59A00B1F2D5;
-			remoteInfo = "SignalR-Swift";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		291C54976E982A542BA4B4C3 /* Pods_SignalR_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalR_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42E40FC4FECA749AD861D67E /* Pods-SignalRSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalRSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignalRSwift/Pods-SignalRSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		563B87151F1FA11100D75CEF /* ServerSentEventsTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSentEventsTransport.swift; sourceTree = "<group>"; };
 		568A77181F223CB2004F5D1C /* ChunkBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChunkBuffer.swift; path = "SignalR-Swift/Transports/ServerSentEvents/ChunkBuffer.swift"; sourceTree = SOURCE_ROOT; };
 		568A771A1F223CF0004F5D1C /* ServerSentEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerSentEvent.swift; path = "SignalR-Swift/Transports/ServerSentEvents/ServerSentEvent.swift"; sourceTree = SOURCE_ROOT; };
-		65B59CFA9FAF15B46BDCDEC1 /* Pods-SignalR-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalR-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B5E080DF752A22D635CE38CF /* Pods-SignalR-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalR-SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		B9B048FC932F5933F9447DCE /* Pods-SignalRSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalRSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignalRSwift/Pods-SignalRSwift.release.xcconfig"; sourceTree = "<group>"; };
 		C91154621E24113F007C0DD9 /* WebSocketTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketTransport.swift; sourceTree = "<group>"; };
 		C91154651E241239007C0DD9 /* WebSocketConnectionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketConnectionInfo.swift; sourceTree = "<group>"; };
 		C91154671E243082007C0DD9 /* ReceivedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMessage.swift; sourceTree = "<group>"; };
@@ -78,10 +57,6 @@
 		C9330B281E1FE59A00B1F2D5 /* SignalRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9330B2B1E1FE59A00B1F2D5 /* SignalR-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalR-Swift.h"; sourceTree = "<group>"; };
 		C9330B2C1E1FE59A00B1F2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9330B311E1FE59A00B1F2D5 /* SignalR-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignalR-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9330B381E1FE59A00B1F2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C94456391E76C02F000FF744 /* ConnectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionTests.swift; path = "SignalR-SwiftTests/Connection/ConnectionTests.swift"; sourceTree = SOURCE_ROOT; };
-		C944563B1E76C555000FF744 /* MockClientTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockClientTransport.swift; sourceTree = "<group>"; };
 		C9B9229C1E295AD7007C2266 /* String+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
 		C9E1C9F71E1FEEF800335B1E /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		C9E1C9FA1E1FF03400335B1E /* ConnectionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
@@ -94,7 +69,6 @@
 		C9FC2D941E2025B80027FE59 /* AutoTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTransport.swift; sourceTree = "<group>"; };
 		C9FC2D961E2025DB0027FE59 /* HttpTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTransport.swift; sourceTree = "<group>"; };
 		C9FC2D981E23BC600027FE59 /* ConnectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDelegate.swift; sourceTree = "<group>"; };
-		E3DD50F71B5A709F5EC093E9 /* Pods_SignalRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,33 +76,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D89CA2D29AD16BE22FB404 /* Pods_SignalRSwift.framework in Frameworks */,
-				FF7BD5762A33378A007B12FD /* Alamofire in Frameworks */,
 				FF7BD5792A3337AF007B12FD /* Starscream in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9330B2E1E1FE59A00B1F2D5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9330B321E1FE59A00B1F2D5 /* SignalRSwift.framework in Frameworks */,
-				AA049197DB8438E88C7B3D5D /* Pods_SignalR_SwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		316A9BF3DEFAB629DD2C78FD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E3DD50F71B5A709F5EC093E9 /* Pods_SignalRSwift.framework */,
-				291C54976E982A542BA4B4C3 /* Pods_SignalR_SwiftTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5686CBB81F7C03B3008CA187 /* ServerSentEvents */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,17 +90,6 @@
 				568A771A1F223CF0004F5D1C /* ServerSentEvent.swift */,
 			);
 			path = ServerSentEvents;
-			sourceTree = "<group>";
-		};
-		C4B90292188059B3970F0902 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				65B59CFA9FAF15B46BDCDEC1 /* Pods-SignalR-SwiftTests.debug.xcconfig */,
-				B5E080DF752A22D635CE38CF /* Pods-SignalR-SwiftTests.release.xcconfig */,
-				42E40FC4FECA749AD861D67E /* Pods-SignalRSwift.debug.xcconfig */,
-				B9B048FC932F5933F9447DCE /* Pods-SignalRSwift.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		C911545F1E23D205007C0DD9 /* Models */ = {
@@ -180,10 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C9330B2A1E1FE59A00B1F2D5 /* SignalR-Swift */,
-				C9330B351E1FE59A00B1F2D5 /* SignalR-SwiftTests */,
 				C9330B291E1FE59A00B1F2D5 /* Products */,
-				C4B90292188059B3970F0902 /* Pods */,
-				316A9BF3DEFAB629DD2C78FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				C9330B281E1FE59A00B1F2D5 /* SignalRSwift.framework */,
-				C9330B311E1FE59A00B1F2D5 /* SignalR-SwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,40 +146,6 @@
 				C9330B2C1E1FE59A00B1F2D5 /* Info.plist */,
 			);
 			path = "SignalR-Swift";
-			sourceTree = "<group>";
-		};
-		C9330B351E1FE59A00B1F2D5 /* SignalR-SwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				C94456361E76BFCB000FF744 /* Mocks */,
-				C94456371E76BFCB000FF744 /* Transport */,
-				C94456381E76BFCB000FF744 /* Connection */,
-				C9330B381E1FE59A00B1F2D5 /* Info.plist */,
-			);
-			path = "SignalR-SwiftTests";
-			sourceTree = "<group>";
-		};
-		C94456361E76BFCB000FF744 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				C944563B1E76C555000FF744 /* MockClientTransport.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		C94456371E76BFCB000FF744 /* Transport */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Transport;
-			sourceTree = "<group>";
-		};
-		C94456381E76BFCB000FF744 /* Connection */ = {
-			isa = PBXGroup;
-			children = (
-				C94456391E76C02F000FF744 /* ConnectionTests.swift */,
-			);
-			path = Connection;
 			sourceTree = "<group>";
 		};
 		C9B9229B1E295A78007C2266 /* Extensions */ = {
@@ -328,7 +233,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9330B3C1E1FE59A00B1F2D5 /* Build configuration list for PBXNativeTarget "SignalRSwift" */;
 			buildPhases = (
-				8893B2F1770B24873610B1CA /* [CP] Check Pods Manifest.lock */,
 				C9330B231E1FE59A00B1F2D5 /* Sources */,
 				C9330B241E1FE59A00B1F2D5 /* Frameworks */,
 				C9330B251E1FE59A00B1F2D5 /* Headers */,
@@ -340,32 +244,11 @@
 			);
 			name = SignalRSwift;
 			packageProductDependencies = (
-				FF7BD5752A33378A007B12FD /* Alamofire */,
 				FF7BD5782A3337AF007B12FD /* Starscream */,
 			);
 			productName = "SignalR-Swift";
 			productReference = C9330B281E1FE59A00B1F2D5 /* SignalRSwift.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		C9330B301E1FE59A00B1F2D5 /* SignalR-SwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9330B3F1E1FE59A00B1F2D5 /* Build configuration list for PBXNativeTarget "SignalR-SwiftTests" */;
-			buildPhases = (
-				F71AD12E7750A42FE3671D48 /* [CP] Check Pods Manifest.lock */,
-				C9330B2D1E1FE59A00B1F2D5 /* Sources */,
-				C9330B2E1E1FE59A00B1F2D5 /* Frameworks */,
-				C9330B2F1E1FE59A00B1F2D5 /* Resources */,
-				1408BA98AFE158F7832B6F37 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9330B341E1FE59A00B1F2D5 /* PBXTargetDependency */,
-			);
-			name = "SignalR-SwiftTests";
-			productName = "SignalR-SwiftTests";
-			productReference = C9330B311E1FE59A00B1F2D5 /* SignalR-SwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -383,12 +266,6 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					C9330B301E1FE59A00B1F2D5 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8Z35TU97D6;
-						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = C9330B221E1FE59A00B1F2D5 /* Build configuration list for PBXProject "SignalR-Swift" */;
@@ -401,7 +278,6 @@
 			);
 			mainGroup = C9330B1E1E1FE59A00B1F2D5;
 			packageReferences = (
-				FF7BD5742A33378A007B12FD /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FF7BD5772A3337AF007B12FD /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = C9330B291E1FE59A00B1F2D5 /* Products */;
@@ -409,7 +285,6 @@
 			projectRoot = "";
 			targets = (
 				C9330B271E1FE59A00B1F2D5 /* SignalRSwift */,
-				C9330B301E1FE59A00B1F2D5 /* SignalR-SwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -422,75 +297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9330B2F1E1FE59A00B1F2D5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1408BA98AFE158F7832B6F37 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Mockit/Mockit.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8893B2F1770B24873610B1CA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SignalRSwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F71AD12E7750A42FE3671D48 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SignalR-SwiftTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9330B231E1FE59A00B1F2D5 /* Sources */ = {
@@ -527,24 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9330B2D1E1FE59A00B1F2D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C944563C1E76C555000FF744 /* MockClientTransport.swift in Sources */,
-				C944563A1E76C02F000FF744 /* ConnectionTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C9330B341E1FE59A00B1F2D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9330B271E1FE59A00B1F2D5 /* SignalRSwift */;
-			targetProxy = C9330B331E1FE59A00B1F2D5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C9330B3A1E1FE59A00B1F2D5 /* Debug */ = {
@@ -649,7 +439,6 @@
 		};
 		C9330B3D1E1FE59A00B1F2D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42E40FC4FECA749AD861D67E /* Pods-SignalRSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -676,7 +465,6 @@
 		};
 		C9330B3E1E1FE59A00B1F2D5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9B048FC932F5933F9447DCE /* Pods-SignalRSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -696,45 +484,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autosoftdms.SignalR-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		C9330B401E1FE59A00B1F2D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65B59CFA9FAF15B46BDCDEC1 /* Pods-SignalR-SwiftTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8Z35TU97D6;
-				INFOPLIST_FILE = "SignalR-SwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autosoftdms.SignalR-SwiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		C9330B411E1FE59A00B1F2D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5E080DF752A22D635CE38CF /* Pods-SignalR-SwiftTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8Z35TU97D6;
-				INFOPLIST_FILE = "SignalR-SwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autosoftdms.SignalR-SwiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -760,26 +509,9 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9330B3F1E1FE59A00B1F2D5 /* Build configuration list for PBXNativeTarget "SignalR-SwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9330B401E1FE59A00B1F2D5 /* Debug */,
-				C9330B411E1FE59A00B1F2D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FF7BD5742A33378A007B12FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		FF7BD5772A3337AF007B12FD /* XCRemoteSwiftPackageReference "Starscream" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/daltoniam/Starscream.git";
@@ -791,11 +523,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FF7BD5752A33378A007B12FD /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FF7BD5742A33378A007B12FD /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		FF7BD5782A3337AF007B12FD /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FF7BD5772A3337AF007B12FD /* XCRemoteSwiftPackageReference "Starscream" */;
